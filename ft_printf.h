@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddifalla <ddifalla@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tmazan <tmazan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 17:49:54 by ddifalla          #+#    #+#             */
-/*   Updated: 2024/06/18 15:11:15 by ddifalla         ###   ########.fr       */
+/*   Updated: 2024/06/20 14:21:47 by tmazan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <unistd.h>
 # include <stdarg.h>
-# include <stdlib.h>
+# include <stdlib.h>    
 
 // PROTOTYPES
 int		ft_printf(const char *format, ...);

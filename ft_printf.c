@@ -6,7 +6,7 @@
 /*   By: tmazan <tmazan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 17:32:35 by ddifalla          #+#    #+#             */
-/*   Updated: 2024/06/20 12:59:27 by tmazan           ###   ########.fr       */
+/*   Updated: 2024/06/20 16:51:43 by tmazan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	i = 0;
 	j = 0;
+	if ((!format || format[i] == '%') && format[i + 1] == '\0')
+		return (-1);
 	while (format[i])
 	{
 		if (format[i] == '%')
